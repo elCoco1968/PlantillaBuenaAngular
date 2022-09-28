@@ -1,0 +1,12 @@
+.logo-img img{
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+    position: absolute;
+    top: 10px;
+    padding-bottom: 1rem;
+    border-radius: .5rem;  
+}
+.colortest{
+    background-color: rgba(58, 58, 58, 0.836);
+}
