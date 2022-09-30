@@ -4,23 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 //modulos
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
-
-import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { PagesComponent } from './pages/pages.component';
 import { SharedModule } from './shared/shared.module';
+import { AuthModule } from './auth/auth.module';
+import { AppComponent } from './app.component';
+import { PagesComponent } from './pages/pages.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent,
-    LoginComponent,
-    RegisterComponent,
+    NopagefoundComponent,
     PagesComponent,
 
   ],
@@ -28,7 +22,8 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    SharedModule
+    SharedModule,
+    AuthModule,
   ],
   bootstrap: [AppComponent]
 })

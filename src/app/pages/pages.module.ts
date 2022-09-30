@@ -4,8 +4,6 @@ import { RouterModule } from '@angular/router';
 
 //modulos
 
-
-import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PrimariesComponent } from './primaries/primaries.component';
 import { RoutesComponent } from './routes/routes.component';
@@ -14,12 +12,13 @@ import { AerodromesComponent } from './aerodromes/aerodromes.component';
 import { AircraftComponent } from './aircraft/aircraft.component';
 import { AssessmentComponent } from './assessment/assessment.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { ConsultAircraftComponent } from './aircraft/consultAircraft/consult-aircraft.component';
+import { ValidationAircraftComponent } from './aircraft/validationAircraft/validation-aircraft.component';
 
 
 
 @NgModule({
   declarations: [ 
-    NopagefoundComponent,
     DashboardComponent,
     PrimariesComponent,
     RoutesComponent,
@@ -27,9 +26,11 @@ import { BrowserModule } from '@angular/platform-browser';
     AerodromesComponent,
     AircraftComponent,
     AssessmentComponent,
+    ConsultAircraftComponent,
+    ValidationAircraftComponent,
+
    ],
   exports:[
-    NopagefoundComponent,
     DashboardComponent,
     PrimariesComponent,
     RoutesComponent,
@@ -37,6 +38,8 @@ import { BrowserModule } from '@angular/platform-browser';
     AerodromesComponent,
     AircraftComponent,
     AssessmentComponent,
+    ConsultAircraftComponent,
+    ValidationAircraftComponent,
   ],
   imports: [
     BrowserModule,
